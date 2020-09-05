@@ -1,0 +1,135 @@
+nav {
+  font-family: 'Dancing Script', cursive;
+  /* background-color: #1abc9c; */
+  background-color:rgba(0, 8, 8, 0.384);
+}
+.navbar-brand, .nav-link {
+  /* font-family: 'Dancing Script', cursive; */
+  font-size: 1.7rem;
+}
+
+#s1_header {
+  background-image: url('img/africa-and-regions/africa6.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+#s1_header aside {
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+@media (max-width: 992px) {
+  #s1_header {
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr); */
+    height: 50vmin !important;
+  }
+}
+
+/* ------ s2_brief-description ----- */
+#s2_brief-description-id {
+  background: rgba(30,17,9,0.8);
+  /* background: peru; */
+  color: white;
+}
+.s2_brief-description {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
+  grid-template-areas: 
+    "description-about description-about description-about"
+    "description-txt description-txt description-img"
+    "description-txt description-txt description-img"
+  ;
+}
+.description-about {
+  grid-area: description-about;
+  text-align: center;
+}
+.description-img {
+  grid-area: description-img;
+}
+.description-txt {
+  grid-area: description-txt;
+  /* line-height: 2; */
+}
+@media (max-width: 992px) {
+  .s2_brief-description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 5px;
+    grid-template-areas: 
+      "description-img description-about description-about"
+      "description-img description-txt description-txt"
+      "description-img description-txt description-txt"
+    ;
+  }
+}
+  
+@media (max-width: 576px) {
+  .s2_brief-description {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 5px;
+    grid-template-areas: 
+      "description-about"
+      "description-img"
+      "description-txt"
+    ;
+  }
+}
+
+
+/*------ s3_regions ------*/
+#s3_regions {
+  background: #f0e9d7;
+}
+.regions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+}
+.regions-grid > .regions-subgrid {
+  width: 300px;
+  height: auto;
+}
+
+
+/*------ s4_nobel-laureates ------*/
+#s4_nobel-laureates {
+  background: #fefaf7;
+}
+.myGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+}
+.mySubGrid img {
+  height: 150px;
+  width: 150px;
+}
+
+
+/*------ s8_footer ------*/
+#s8_footer {
+  height: 100px;
+  background: black;
+  color: white;
+  line-height: 100px;
+  ;
+}
+.hearts {
+  color: red;
+}
