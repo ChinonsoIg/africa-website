@@ -1,11 +1,7 @@
 nav {
   font-family: 'Dancing Script', cursive;
-  /* background-color: #1abc9c; */
   background-color:rgba(0, 8, 8, 0.384);
-}
-.navbar-brand, .nav-link {
-  /* font-family: 'Dancing Script', cursive; */
-  font-size: 1.7rem;
+  font-size: 1.7rem !important;
 }
 
 #s1_header {
@@ -18,24 +14,42 @@ nav {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
-#s1_header aside {
+#s1_header h1 {
   text-align: center;
   grid-column: 2/3;
   grid-row: 3/4;
+  font-size: 3rem;
+  font-weight: bolder;
+  background-color: #d9b5789c;
+  color: #482101;
 }
 @media (max-width: 992px) {
   #s1_header {
-    /* grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr); */
     height: 50vmin !important;
+  }
+  #s1_header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+@media (max-width: 572px) {
+  #s1_header h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
+@media (max-width: 352px) {
+  #s1_header h1 {
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 }
 
 /* ------ s2_brief-description ----- */
 #s2_brief-description-id {
-  background: rgba(30,17,9,0.8);
+  background: #fff;
   /* background: peru; */
-  color: white;
+  color: rgb(49, 28, 0);
 }
 .s2_brief-description {
   display: grid;
@@ -102,6 +116,9 @@ nav {
 .regions-grid > .regions-subgrid {
   width: 300px;
   height: auto;
+}
+ul li {
+  border: none !important;
 }
 
 
